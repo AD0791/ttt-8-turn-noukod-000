@@ -50,6 +50,6 @@ def turn board
     move(board,value, "X")
     display_board(board)
   else
-    puts "Please enter 1-9:"
+    puts "invalid"
   end
 end
