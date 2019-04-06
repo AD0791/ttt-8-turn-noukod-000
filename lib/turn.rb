@@ -8,9 +8,15 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+# convert input to integer
+
+def input_to_index tato
+  tato.to_i - 1
+end
+
 # Check if position is position_taken
 
-def position_taken?(board,index)
+def position_taken?(board,index = input_to_index(tato))
   if board[index] == "" || board[index] == " " || board[index] == nil
     false
   else
@@ -20,18 +26,12 @@ end
 
 # Check the move is valid
 
-def valid_move?(board,index)
+def valid_move?(board,index = input_to_index(tato))
   if index.between?(0,8) && !position_taken?(board,index)
     true
   else
     false
   end
-end
-
-# convert input to integer
-
-def input_to_index tato
-  tato.to_i - 1
 end
 
 # make move possible 
