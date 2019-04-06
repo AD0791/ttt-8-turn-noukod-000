@@ -51,5 +51,6 @@ def turn board
     display_board(board)
   else
   puts  "invalid"
+  
   end
 end
