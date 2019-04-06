@@ -47,7 +47,7 @@ def turn board
   input = gets.strip
   value = input_to_index(input)
   if valid_move?(board,index = value)
-    move(board,value)
+    move(board,value, "X")
   else
     puts "Please enter 1-9:"
 end
