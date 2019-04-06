@@ -47,5 +47,6 @@ def turn board
   input = gets.strip
   value = input_to_index(input)
   valid_move?(board,index = value)
-  
+  if valid_move?(board,value)
+    puts ""
 end
