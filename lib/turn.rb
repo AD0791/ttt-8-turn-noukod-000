@@ -50,6 +50,6 @@ def turn board
     move(board,value, "X")
     display_board(board)
   else
-    "invalid"
+  puts  "invalid"
   end
 end
