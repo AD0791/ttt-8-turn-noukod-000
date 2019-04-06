@@ -12,7 +12,4 @@ count = 0
 while count < 9
   turn(board)
   count += 1
-  if valid_move?(board,value) == false
-    break
-  end
 end
