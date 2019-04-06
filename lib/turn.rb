@@ -49,8 +49,6 @@ def turn board
   if valid_move?(board,index = value)
     move(board,value, "X")
     display_board(board)
-  elsif !valid_move?(board,index = value)
-    puts "Please enter 1-9:"
   else
     puts "Please enter 1-9:"
   end
