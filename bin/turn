@@ -14,4 +14,5 @@ while count < 9
   count += 1
   if valid_move?(board,value) == false
     break
+  end
 end
