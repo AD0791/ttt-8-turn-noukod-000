@@ -41,10 +41,8 @@ def move(board,index= input_to_index(tato),posdepart="X")
 end
 
 # Turn
-
+puts "Please enter 1-9:"
 def turn board
-  puts "Please enter 1-9:"
-  
   input = gets.strip
   value = input_to_index(input)
   if valid_move?(board,index = value)
